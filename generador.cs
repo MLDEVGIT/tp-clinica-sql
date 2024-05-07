@@ -9,7 +9,7 @@ enum TurnoStatus {
   Ocupado = 2
 }
      private static void ImprimirInserts (List<string> dates, List<string> horas,int[]lugarDeAtencion_id, TurnoStatus turnoStatus) {
-       Console.WriteLine("INSERT INTO CircuitoB.Turno (Fecha, Hora, LugarDeAtencion_id,  Paciente_id, TurnoStatus) VALUES ");
+       Console.WriteLine("INSERT INTO Clinica.Turno (Fecha, Hora, LugarDeAtencion_id,  Paciente_id, TurnoStatus) VALUES ");
 
         bool isFirst = true;
 
