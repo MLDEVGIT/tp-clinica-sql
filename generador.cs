@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 using System.Collections.Generic;
 
 public class GeneradorInserts
@@ -9,7 +10,7 @@ enum TurnoStatus {
   Ocupado = 2
 }
      private static void ImprimirInserts (List<string> dates, List<string> horas,int[]lugarDeAtencion_id, TurnoStatus turnoStatus) {
-       Console.WriteLine("INSERT INTO Clinica.Turno (Fecha, Hora, LugarDeAtencion_id,  Paciente_id, TurnoStatus) VALUES ");
+       Console.WriteLine("INSERT INTO Clinica.Turno (Fecha, Hora, LugarDeAtencion_id,  Paciente_id, TurnoStatus, Estudio_id) VALUES ");
 
         bool isFirst = true;
 
@@ -21,12 +22,14 @@ enum TurnoStatus {
             { 
               if (isFirst)
               {
-                Console.WriteLine("('" + date + "', '" + hora + "', " + lugar + ",  NULL,  " + ((int)turnoStatus) + ")");
+               Console.WriteLine($"('{date}', '{hora}', {lugar}, NULL, {(int)turnoStatus}, NULL)");
+
                 isFirst = false;
               }
               else {
 
-              Console.WriteLine(",('" + date + "', '" + hora + "', " + lugar + ",  NULL,  " +((int)turnoStatus) + ")");
+              Console.WriteLine($",('{date}', '{hora}', {lugar}, NULL, {(int)turnoStatus}, NULL)");
+
               }
             }
           }
@@ -53,24 +56,54 @@ enum TurnoStatus {
     }
     public static void Main(string[] args)
     {
-        
-        int[] lugarDeAtencion_id = {1, 2, 3, 4, 5};
+        /*
+        INSERT INTO Clinica.Estudio (Descripcion) VALUES
+        ('Análisis de Sangre (con ayuno)'),
+        ('Análisis Dengue (sin ayuno)'),
+        ('Ecografia'),
+        ('Electrocardiograma'),
+        ('Radiografia'),
+        ('Tomografia');
 
+        INSERT INTO Clinica.LugarDeAtencion (Descripcion) VALUES
+        ('Box Laboratorio 1'),
+        ('Box Laboratorio 2'),
+        ('Box Laboratorio 3'),
+        ('Consultorio 1'),
+        ('Consultorio 2'),
+        ('Consultorio 3'),
+        ('Sala de Rayos X'),
+        ('Tomógrafo');
+          */
+          /*
+
+          Agenda de turnos: Todos los estudios se realizan con turno,
+          menos los estudios de laboratorio y los derivados de Guardia Médica / Internación. 
+          Horarios de laboratorio Estudios que requieren ayuno previo. 7:00 a 11:00 hs. Estudios que no requieren ayuno. 7:00 a 17:00 hs.
+          */
+        int[] lugarDeAtencion_id = {1, 2, 3};
+ 
         ImprimirInserts(
-          GenerarFechas("2024-05-14", "2024-05-15"), 
-          GenerarHoras("00:00:00", "08:30:00"), 
-          lugarDeAtencion_id, 
-          TurnoStatus.NoDisponible);
-        ImprimirInserts(
-          GenerarFechas("2024-05-14", "2024-05-15"), 
-          GenerarHoras("09:00:00", "12:00:00"), 
+          GenerarFechas("2024-05-01", "2024-06-30"), 
+          GenerarHoras("07:00:00", "17:00:00"), 
           lugarDeAtencion_id, 
           TurnoStatus.Disponible);
-        ImprimirInserts(
-          GenerarFechas("2024-05-14", "2024-05-15"), 
-          GenerarHoras("12:30:00", "23:30:00"), 
+
+
+        lugarDeAtencion_id = new int[] {4, 5, 6};
+         ImprimirInserts(
+          GenerarFechas("2024-05-01", "2024-06-30"), 
+          GenerarHoras("08:00:00", "18:00:00"), 
           lugarDeAtencion_id, 
-          TurnoStatus.NoDisponible);
+          TurnoStatus.Disponible);
+
+         lugarDeAtencion_id = new int[] {7, 8};
+         ImprimirInserts(
+          GenerarFechas("2024-05-01", "2024-06-30"), 
+          GenerarHoras("00:00:00", "23:30:00"), 
+          lugarDeAtencion_id, 
+         TurnoStatus.Disponible);
+         
        
     }
 }

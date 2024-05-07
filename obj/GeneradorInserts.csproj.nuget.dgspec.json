@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\fedev\\source\\repos\\tp-clinica-sql\\GeneradorInserts.csproj": {}
+    "C:\\Users\\fedev\\source\\repos\\tp-clinica-sql\\GeneradorInserts.csproj": {}
   },
   "projects": {
-    "c:\\Users\\fedev\\source\\repos\\tp-clinica-sql\\GeneradorInserts.csproj": {
+    "C:\\Users\\fedev\\source\\repos\\tp-clinica-sql\\GeneradorInserts.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\fedev\\source\\repos\\tp-clinica-sql\\GeneradorInserts.csproj",
+        "projectUniqueName": "C:\\Users\\fedev\\source\\repos\\tp-clinica-sql\\GeneradorInserts.csproj",
         "projectName": "GeneradorInserts",
-        "projectPath": "c:\\Users\\fedev\\source\\repos\\tp-clinica-sql\\GeneradorInserts.csproj",
+        "projectPath": "C:\\Users\\fedev\\source\\repos\\tp-clinica-sql\\GeneradorInserts.csproj",
         "packagesPath": "C:\\Users\\fedev\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\fedev\\source\\repos\\tp-clinica-sql\\obj\\",
+        "outputPath": "C:\\Users\\fedev\\source\\repos\\tp-clinica-sql\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

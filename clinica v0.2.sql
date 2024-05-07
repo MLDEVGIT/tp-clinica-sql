@@ -94,7 +94,6 @@ CREATE TABLE IF NOT EXISTS `Clinica`.`Estudio` (
   `Descripcion` VARCHAR(45) NULL,
   PRIMARY KEY (`id`));
 
-
 -- -----------------------------------------------------
 -- Table `Clinica`.`LugarDeAtencion`
 -- -----------------------------------------------------
@@ -103,12 +102,23 @@ DROP TABLE IF EXISTS `Clinica`.`LugarDeAtencion` ;
 CREATE TABLE IF NOT EXISTS `Clinica`.`LugarDeAtencion` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `Descripcion` VARCHAR(45) NULL,
+  PRIMARY KEY (`id`));
+
+-- -----------------------------------------------------
+-- Table `Clinica`.`EstudioLugarDeAtencion`
+-- -----------------------------------------------------
+DROP TABLE IF EXISTS `Clinica`.`EstudioLugarDeAtencion` ;
+
+CREATE TABLE IF NOT EXISTS `Clinica`.`EstudioLugarDeAtencion` (
   `Estudio_id` INT NOT NULL,
-  PRIMARY KEY (`id`),
-  CONSTRAINT `fk_LugarDeAtencion_Estudio1`
+  `LugarDeAtencion_id` INT NOT NULL,
+  PRIMARY KEY (`Estudio_id`, `LugarDeAtencion_id`),
+  CONSTRAINT `fk_EstudioLugarDeAtencion1`
+    FOREIGN KEY (`LugarDeAtencion_id`)
+    REFERENCES `Clinica`.`LugarDeAtencion` (`id`),
+  CONSTRAINT `fk_LugarDeAtencionEstudio1`
     FOREIGN KEY (`Estudio_id`)
     REFERENCES `Clinica`.`Estudio` (`id`));
-
 
  
 -- -----------------------------------------------------
@@ -123,6 +133,7 @@ CREATE TABLE IF NOT EXISTS `Clinica`.`Turno` (
   `LugarDeAtencion_id` INT NOT NULL,
   `Paciente_id` INT NULL,
   `TurnoStatus` INT NOT NULL,
+  `Estudio_id` INT NULL,
   PRIMARY KEY (`id`),
   CONSTRAINT `fk_Turno_Paciente1`
     FOREIGN KEY (`Paciente_id`)
@@ -221,29 +232,43 @@ INSERT INTO Clinica.Estudio (Descripcion) VALUES
 ('Tomografia');
 
 
-INSERT INTO Clinica.LugarDeAtencion (Descripcion, Estudio_id) VALUES
-('Box Laboratorio 1', 1),
-('Box Laboratorio 2', 1),
-('Box Laboratorio 3', 1),
-('Box Laboratorio 1', 2),
-('Box Laboratorio 2', 2),
-('Box Laboratorio 3', 2),
-('Consultorio 1', 3),
-('Consultorio 2', 3),
-('Consultorio 3', 4),
-('Sala de Rayos X', 5),
-('Tomógrafo', 6);
+INSERT INTO Clinica.LugarDeAtencion (Descripcion) VALUES
+('Box Laboratorio 1'),
+('Box Laboratorio 2'),
+('Box Laboratorio 3'),
+('Consultorio 1'),
+('Consultorio 2'),
+('Consultorio 3'),
+('Sala de Rayos X'),
+('Tomógrafo');
  
+INSERT INTO Clinica.EstudioLugarDeAtencion (Estudio_id, LugarDeAtencion_id) VALUES
+(1, 1),
+(1, 2),
+(1, 3),
+(2, 1),
+(2, 2),
+(2, 3),
+(3, 4),
+(3, 5),
+(3, 6),
+(4, 4),
+(4, 5),
+(4, 6),
+(5, 7),
+(6, 8);
 
 -- Table `Turno`
 
-INSERT INTO Clinica.Turno (Fecha, Hora, LugarDeAtencion_id,  Paciente_id, TurnoStatus) VALUES
-('2024-05-07', '10:30:00', 1,  1,  2),
-('2024-05-08', '11:30:00', 2,  2,  2),
-('2024-05-09', '12:30:00', 3,  3,  2),
-('2024-05-10', '13:30:00', 4,  4,  2),
-('2024-05-11', '14:30:00', 5,  5,  2),
-('2024-05-11', '14:30:00', 6,  5,  2);
+INSERT INTO Clinica.Turno (Fecha, Hora, LugarDeAtencion_id,  Paciente_id, TurnoStatus, Estudio_id) VALUES
+('2024-05-07', '10:30:00', 1,  1,  2, 1),
+('2024-05-08', '11:30:00', 2,  2,  2, 2),
+('2024-05-09', '12:30:00', 3,  3,  2, 4),
+('2024-05-10', '13:30:00', 4,  4,  2, 5),
+('2024-05-11', '14:30:00', 5,  5,  2, 7),
+('2024-05-11', '14:30:00', 6,  5,  2, 8),
+('2024-05-11', '14:30:00', 1,  5,  1, null),
+('2024-05-11', '14:30:00', 1,  5,  1, null);
 
 -- Table `SalaDeEspera`
 

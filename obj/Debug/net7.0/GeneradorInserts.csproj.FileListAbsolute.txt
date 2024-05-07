@@ -1,0 +1,15 @@
+C:\Users\fedev\source\repos\tp-clinica-sql\bin\Debug\net7.0\GeneradorInserts.exe
+C:\Users\fedev\source\repos\tp-clinica-sql\bin\Debug\net7.0\GeneradorInserts.deps.json
+C:\Users\fedev\source\repos\tp-clinica-sql\bin\Debug\net7.0\GeneradorInserts.runtimeconfig.json
+C:\Users\fedev\source\repos\tp-clinica-sql\bin\Debug\net7.0\GeneradorInserts.dll
+C:\Users\fedev\source\repos\tp-clinica-sql\bin\Debug\net7.0\GeneradorInserts.pdb
+C:\Users\fedev\source\repos\tp-clinica-sql\obj\Debug\net7.0\GeneradorInserts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\fedev\source\repos\tp-clinica-sql\obj\Debug\net7.0\GeneradorInserts.AssemblyInfoInputs.cache
+C:\Users\fedev\source\repos\tp-clinica-sql\obj\Debug\net7.0\GeneradorInserts.AssemblyInfo.cs
+C:\Users\fedev\source\repos\tp-clinica-sql\obj\Debug\net7.0\GeneradorInserts.csproj.CoreCompileInputs.cache
+C:\Users\fedev\source\repos\tp-clinica-sql\obj\Debug\net7.0\GeneradorInserts.sourcelink.json
+C:\Users\fedev\source\repos\tp-clinica-sql\obj\Debug\net7.0\GeneradorInserts.dll
+C:\Users\fedev\source\repos\tp-clinica-sql\obj\Debug\net7.0\refint\GeneradorInserts.dll
+C:\Users\fedev\source\repos\tp-clinica-sql\obj\Debug\net7.0\GeneradorInserts.pdb
+C:\Users\fedev\source\repos\tp-clinica-sql\obj\Debug\net7.0\GeneradorInserts.genruntimeconfig.cache
+C:\Users\fedev\source\repos\tp-clinica-sql\obj\Debug\net7.0\ref\GeneradorInserts.dll
