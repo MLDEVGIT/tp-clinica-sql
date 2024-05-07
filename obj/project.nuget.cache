@@ -1,0 +1,13 @@
+{
+  "version": 2,
+  "dgSpecHash": "JjXMleKbI/VqOv3Cw3du+f3+t8a6P/AIsxjAZ1k2hSldYHiDeLvzc2mX3ASZ2NlGF0W7rD/4eR3C3/MR7eBTQQ==",
+  "success": true,
+  "projectFilePath": "c:\\Users\\fedev\\source\\repos\\tp-clinica-sql\\GeneradorInserts.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\fedev\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.18\\microsoft.netcore.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\fedev\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.18\\microsoft.windowsdesktop.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\fedev\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.18\\microsoft.aspnetcore.app.ref.7.0.18.nupkg.sha512",
+    "C:\\Users\\fedev\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.18\\microsoft.netcore.app.host.win-x64.7.0.18.nupkg.sha512"
+  ],
+  "logs": []
+}
