@@ -15,12 +15,7 @@ Metodo de pago
 2 = "Tarjeta de Débito"
 
 */
-/*
-Agenda de turnos: Todos los estudios se realizan con turno,
- menos los estudios de laboratorio y los derivados de Guardia Médica / Internación. 
-Horarios de laboratorio Estudios que requieren ayuno previo. 7:00 a 11:00 hs. 
-Estudios que no requieren ayuno. 7:00 a 17:00 hs.
-*/
+
 
 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
@@ -92,6 +87,8 @@ DROP TABLE IF EXISTS `Clinica`.`Estudio` ;
 CREATE TABLE IF NOT EXISTS `Clinica`.`Estudio` (
   `id` INT NOT NULL AUTO_INCREMENT,
   `Descripcion` VARCHAR(45) NULL,
+  `RequiereTurno` boolean NOT NULL,
+  `RequiereAyuno` boolean NOT NULL,
   PRIMARY KEY (`id`));
 
 -- -----------------------------------------------------
@@ -223,13 +220,13 @@ INSERT INTO Clinica.Paciente (Nombre, Apellido, DNI, Direccion, Email, Cobertura
 ('Luis', 'Fernandez', '32567890', 'Calle sur 1213', 'lfernandez@email.com', 5, 'Historia clínica de Luis');
 
 
-INSERT INTO Clinica.Estudio (Descripcion) VALUES
-('Análisis de Sangre (con ayuno)'),
-('Análisis Dengue (sin ayuno)'),
-('Ecografia'),
-('Electrocardiograma'),
-('Radiografia'),
-('Tomografia');
+INSERT INTO Clinica.Estudio (Descripcion, RequiereTurno, RequiereAyuno) VALUES
+('Análisis de Sangre (con ayuno)', 0, 1),
+('Análisis Dengue (sin ayuno)', 0, 0),
+('Ecografia', 1, 0),
+('Electrocardiograma', 1, 0),
+('Radiografia', 1, 0),
+('Tomografia', 1, 0);
 
 
 INSERT INTO Clinica.LugarDeAtencion (Descripcion) VALUES

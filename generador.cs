@@ -81,16 +81,10 @@ enum TurnoStatus {
           menos los estudios de laboratorio y los derivados de Guardia Médica / Internación. 
           Horarios de laboratorio Estudios que requieren ayuno previo. 7:00 a 11:00 hs. Estudios que no requieren ayuno. 7:00 a 17:00 hs.
           */
-        int[] lugarDeAtencion_id = {1, 2, 3};
- 
-        ImprimirInserts(
-          GenerarFechas("2024-05-01", "2024-06-30"), 
-          GenerarHoras("07:00:00", "17:00:00"), 
-          lugarDeAtencion_id, 
-          TurnoStatus.Disponible);
+    
 
 
-        lugarDeAtencion_id = new int[] {4, 5, 6};
+        int [] lugarDeAtencion_id = new int[] {4, 5, 6};
          ImprimirInserts(
           GenerarFechas("2024-05-01", "2024-06-30"), 
           GenerarHoras("08:00:00", "18:00:00"), 
