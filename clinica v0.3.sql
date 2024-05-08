@@ -167,15 +167,19 @@ DROP TABLE IF EXISTS `Clinica`.`Factura` ;
 
 CREATE TABLE IF NOT EXISTS `Clinica`.`Factura` (
   `id` INT NOT NULL AUTO_INCREMENT,
-  `Turno_id` INT NOT NULL,
+  `Estudio_id` INT NOT NULL,
+  `Cobertura_id` INT NOT NULL,
   `Paciente_id` INT NOT NULL,
   `Monto` FLOAT NULL,
   `MetodoPago` INT NULL,
   `FacturaStatus` INT NOT NULL,
   PRIMARY KEY (`id`),
-  CONSTRAINT `fk_Factura_Turno1`
-    FOREIGN KEY (`Turno_id`)
-    REFERENCES `Clinica`.`Turno` (`id`),
+  CONSTRAINT `fk_Factura_Estudio1`
+    FOREIGN KEY (`Estudio_id`)
+    REFERENCES `Clinica`.`Estudio` (`id`),
+  CONSTRAINT `fk_Factura_Cobertura1`
+    FOREIGN KEY (`Cobertura_id`)
+    REFERENCES `Clinica`.`Cobertura` (`id`),
   CONSTRAINT `fk_Factura_Paciente1`
     FOREIGN KEY (`Paciente_id`)
     REFERENCES `Clinica`.`Paciente` (`id`));
@@ -278,12 +282,12 @@ INSERT INTO Clinica.SalaDeEspera (FechaHoraAcreditacion, Turno_id, Prioridad) VA
  
  
 
-INSERT INTO Clinica.Factura (Turno_id, Paciente_id, Monto, MetodoPago, FacturaStatus) VALUES
-(1, 1, 1000.00, 1, 1),
-(2, 2, 800.00, 2, 2),
-(3, 3, 600.00, 1, 0),
-(4, 4, 400.00, 2, 0),
-(5, 5, 200.00, 0, 1);
+INSERT INTO Clinica.Factura (Estudio_id, Cobertura_id, Paciente_id, Monto, MetodoPago, FacturaStatus) VALUES
+(1, 1, 1, 1000.00, 1, 1),
+(2, 2, 2, 800.00, 2, 2),
+(3, 3, 3, 600.00, 1, 0),
+(4, 4, 4, 400.00, 2, 0),
+(5, 5, 5, 200.00, 0, 1);
 
 INSERT INTO Clinica.CoberturaEstudio (Cobertura_id, Estudio_id, Monto) VALUES
 (1, 1, 500),
