@@ -4,6 +4,10 @@
 1 = "Disponible"
 2 = "Ocupado"
 
+Prioridad
+0 = "Urgente"
+1 = "Normal"
+
 Factura status
 0 = "Sin Pago"
 1 = "Pagada"
