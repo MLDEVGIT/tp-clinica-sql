@@ -5,12 +5,12 @@
 2 = "Ocupado"
 
 Factura status
-0 = "Pendiente"
+0 = "Sin Pago"
 1 = "Pagada"
-2 = "Anulada"
+2 = "Pendiente"
 
 Metodo de pago
-0 = "Pago por Cobertura"
+0 = "Sin Pago"
 1 = "Efectivo"
 2 = "Tarjeta de Débito"
 
@@ -262,8 +262,8 @@ INSERT INTO Clinica.EstudioLugarDeAtencion (Estudio_id, LugarDeAtencion_id) VALU
 -- Table `Turno`
 
 INSERT INTO Clinica.Turno (Fecha, Hora, LugarDeAtencion_id,  Paciente_id, TurnoStatus, Estudio_id) VALUES
-('2024-05-07', '10:30:00', 1,  1,  2, 1),
-('2024-05-08', '11:30:00', 2,  2,  2, 2),
+('2024-05-07', '10:30:00', 4,  1,  2, 3),
+('2024-05-08', '11:30:00', 5,  2,  2, 4),
 ('2024-05-09', '12:30:00', 4,  3,  2, 3),
 ('2024-05-10', '13:30:00', 5,  4,  2, 4),
 ('2024-05-11', '14:30:00', 7,  5,  2, 5),

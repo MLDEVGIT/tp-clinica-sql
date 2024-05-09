@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GeneradorInserts")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e9708bf8e99aa4fa5a65d9b49a7cc2e027cf6ee0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+866fa3729f7988d5c576ee9a24e00bd381a25e2b")]
 [assembly: System.Reflection.AssemblyProductAttribute("GeneradorInserts")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GeneradorInserts")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
