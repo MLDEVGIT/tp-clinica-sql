@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\martinlopez\\Desktop\\tp-clinica-sql-ML\\tp-clinica-sql\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBA15E0-05A3-4903-AFCE-FBBCEC1D3AE8}|GeneradorInserts.csproj|c:\\users\\martinlopez\\desktop\\tp-clinica-sql-ml\\tp-clinica-sql\\insertsturnos.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{9EBA15E0-05A3-4903-AFCE-FBBCEC1D3AE8}|GeneradorInserts.csproj|solutionrelative:insertsturnos.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBA15E0-05A3-4903-AFCE-FBBCEC1D3AE8}|GeneradorInserts.csproj|c:\\users\\martinlopez\\desktop\\tp-clinica-sql-ml\\tp-clinica-sql\\clinicav05.sql||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{9EBA15E0-05A3-4903-AFCE-FBBCEC1D3AE8}|GeneradorInserts.csproj|solutionrelative:clinicav05.sql||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9EBA15E0-05A3-4903-AFCE-FBBCEC1D3AE8}|GeneradorInserts.csproj|c:\\users\\martinlopez\\desktop\\tp-clinica-sql-ml\\tp-clinica-sql\\baseclub y procedures v9.sql||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{9EBA15E0-05A3-4903-AFCE-FBBCEC1D3AE8}|GeneradorInserts.csproj|solutionrelative:baseclub y procedures v9.sql||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "insertsTurnos.txt",
+              "DocumentMoniker": "C:\\Users\\martinlopez\\Desktop\\tp-clinica-sql-ML\\tp-clinica-sql\\insertsTurnos.txt",
+              "RelativeDocumentMoniker": "insertsTurnos.txt",
+              "ToolTip": "C:\\Users\\martinlopez\\Desktop\\tp-clinica-sql-ML\\tp-clinica-sql\\insertsTurnos.txt",
+              "RelativeToolTip": "insertsTurnos.txt",
+              "ViewState": "AQIAAGMAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2024-05-24T21:26:54.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "clinicaV05.sql",
+              "DocumentMoniker": "C:\\Users\\martinlopez\\Desktop\\tp-clinica-sql-ML\\tp-clinica-sql\\clinicaV05.sql",
+              "RelativeDocumentMoniker": "clinicaV05.sql",
+              "ToolTip": "C:\\Users\\martinlopez\\Desktop\\tp-clinica-sql-ML\\tp-clinica-sql\\clinicaV05.sql",
+              "RelativeToolTip": "clinicaV05.sql",
+              "ViewState": "AQIAAEsBAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-24T21:26:45.732Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BaseClub y procedures v9.sql",
+              "DocumentMoniker": "C:\\Users\\martinlopez\\Desktop\\tp-clinica-sql-ML\\tp-clinica-sql\\BaseClub y procedures v9.sql",
+              "RelativeDocumentMoniker": "BaseClub y procedures v9.sql",
+              "ToolTip": "C:\\Users\\martinlopez\\Desktop\\tp-clinica-sql-ML\\tp-clinica-sql\\BaseClub y procedures v9.sql",
+              "RelativeToolTip": "BaseClub y procedures v9.sql",
+              "ViewState": "AQIAAOEAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2024-05-24T21:26:24.597Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
